@@ -22,7 +22,7 @@ class BaseScene:
         self.screen.blit(i.image, i.position())
 
     def draw_text(self, text, position):
-        font = pygame.font.Font(None, 20)
+        font = pygame.font.SysFont("arial", 20)
         text_object = font.render(text, True, (255, 255, 255))
         self.screen.blit(text_object, position)
 
